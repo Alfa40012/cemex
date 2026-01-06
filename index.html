@@ -1,148 +1,166 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>CEMEX Downloads</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>CEMEX | الدعم الفني والتنزيلات</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="CEMEX firmware & channel files">
-  <meta property="og:title" content="CEMEX Downloads">
-  <meta property="og:image" content="/images/logo.png">
+<meta name="description" content="CEMEX Firmware, Channels & Technical Support">
+<meta property="og:title" content="CEMEX Downloads">
+<meta property="og:image" content="./images/logo.png">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
+<style>
+body{
+  font-family:'Inter',system-ui;
+  background:#070f1e;
+  color:#fff;
+}
 
-    @keyframes fadeUp {
-      from { opacity:0; transform:translateY(18px) }
-      to { opacity:1; transform:translateY(0) }
-    }
-    .fade-up { animation: fadeUp .7s ease both }
+/* GOLD FRAME */
+.gold{
+  background:
+    linear-gradient(#07162b,#07162b) padding-box,
+    linear-gradient(135deg,#d4af37,#fff1a8,#b8962e) border-box;
+  border:1.5px solid transparent;
+}
+.gold:hover{
+  box-shadow:0 0 25px rgba(212,175,55,.6);
+  transform:translateY(-4px);
+}
 
-    .gold-border {
-      border: 1.5px solid transparent;
-      background:
-        linear-gradient(#07162b, #07162b) padding-box,
-        linear-gradient(135deg, #d4af37, #fff1a8, #b8962e) border-box;
-    }
-    .gold-glow:hover {
-      box-shadow: 0 0 26px rgba(212,175,55,.6);
-    }
-  </style>
+/* LOGO SHINE */
+.logo-shine{
+  position:relative;
+  overflow:hidden;
+}
+.logo-shine::after{
+  content:"";
+  position:absolute;
+  top:-50%;
+  left:-120%;
+  width:60%;
+  height:200%;
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,230,150,.9),
+    transparent
+  );
+  transform:rotate(25deg);
+  animation:shine 5s infinite;
+}
+@keyframes shine{
+  0%{left:-120%}
+  40%{left:140%}
+  100%{left:140%}
+}
+</style>
 </head>
 
-<body class="bg-[#070f1e] text-white min-h-screen">
+<body>
 
 <!-- HEADER -->
-<header class="py-10 flex justify-center border-b border-white/10">
-  <img src="/images/logo.png" class="h-16 object-contain" alt="CEMEX">
+<header class="py-8 md:py-10 flex justify-center border-b border-white/10">
+  <div class="logo-shine">
+    <img src="./images/logo.png" alt="CEMEX Logo" class="h-14 md:h-16 object-contain">
+  </div>
 </header>
 
 <!-- TITLE -->
-<section class="text-center py-14 px-4">
-  <h1 class="text-4xl font-extrabold">CEMEX Downloads</h1>
-  <p class="mt-4 text-white/65">
-    تحميل السوفت وير وملفات القنوات الشهرية
+<section class="text-center py-10 md:py-16 px-4">
+  <h1 class="text-3xl md:text-4xl font-extrabold">
+    CEMEX – الدعم الفني والتنزيلات
+  </h1>
+  <p class="mt-4 text-white/70 max-w-xl mx-auto">
+    تحميل السوفت وير – القنوات الشهرية – دعم فني مباشر
   </p>
 </section>
 
 <!-- MODELS -->
-<main class="max-w-7xl mx-auto px-4 pb-24">
-  <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+<main class="max-w-7xl mx-auto px-4 md:px-6 pb-32">
+  <div class="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-3">
 
-    <!-- TEMPLATE -->
-    <!-- انسخ الكارت -->
+<!-- CEMEX2030 -->
+<div class="gold rounded-2xl p-5 md:p-7 text-center transition">
+<img src="./images/device.png" class="mx-auto h-28">
+<h3 class="mt-4 text-xl font-extrabold">CEMEX2030</h3>
+<div class="mt-4 flex flex-col gap-3">
+<a href="https://www.mediafire.com/file/wlx8gkb12ronpiz/Cemex_2030_2507L_1G_16M-22-9-2025.bin/file" target="_blank" class="bg-white text-black py-2.5 rounded-lg font-bold">SOFTWARE</a>
+<a href="https://www.mediafire.com/file/tr86dmyy1d301zw/AR_ثابت.bin/file" target="_blank" class="bg-[#d4af37] text-black py-2.5 rounded-lg font-bold">قنوات – شهريًا</a>
+<a href="https://api.whatsapp.com/send/?phone=201098256570&text=CEMEX2030" target="_blank" class="border border-white/30 py-2 rounded-lg">دعم فني</a>
+</div>
+</div>
 
-    <!-- CEMEX2030 -->
-    <div class="fade-up gold-border gold-glow rounded-2xl p-7 text-center">
-      <img src="/images/device.png" class="mx-auto h-32">
-      <h3 class="mt-5 text-xl font-extrabold">CEMEX2030</h3>
-      <div class="mt-5 flex flex-col gap-3">
-        <a href="https://www.mediafire.com/file/wlx8gkb12ronpiz/Cemex_2030_2507L_1G_16M-22-9-2025.bin/file" target="_blank"
-           class="bg-white text-[#070f1e] font-bold py-2 rounded-lg">SOFTWARE</a>
-        <a href="https://www.mediafire.com/file/tr86dmyy1d301zw/AR_ثابت.bin/file" target="_blank"
-           class="bg-[#d4af37] text-[#070f1e] font-bold py-2 rounded-lg">قنوات – شهريًا</a>
-      </div>
-    </div>
+<!-- CEMEX3030 -->
+<div class="gold rounded-2xl p-5 md:p-7 text-center transition">
+<img src="./images/device.png" class="mx-auto h-28">
+<h3 class="mt-4 text-xl font-extrabold">CEMEX3030</h3>
+<div class="mt-4 flex flex-col gap-3">
+<a href="https://www.mediafire.com/file/8afr70e23f4p55t/Cemex_3030_2507L_1G_8M_SVC11_Internal_61988_rls6_20250927_151520.bin/file" target="_blank" class="bg-white text-black py-2.5 rounded-lg font-bold">SOFTWARE</a>
+<a href="https://www.mediafire.com/file/tr86dmyy1d301zw/AR_ثابت.bin/file" target="_blank" class="bg-[#d4af37] text-black py-2.5 rounded-lg font-bold">قنوات – شهريًا</a>
+<a href="https://api.whatsapp.com/send/?phone=201098256570&text=CEMEX3030" target="_blank" class="border border-white/30 py-2 rounded-lg">دعم فني</a>
+</div>
+</div>
 
-    <!-- CEMEX3030 -->
-    <div class="fade-up gold-border gold-glow rounded-2xl p-7 text-center">
-      <img src="/images/device.png" class="mx-auto h-32">
-      <h3 class="mt-5 text-xl font-extrabold">CEMEX3030</h3>
-      <div class="mt-5 flex flex-col gap-3">
-        <a href="https://www.mediafire.com/file/tr86dmyy1d301zw/AR_ثابت.bin/file" target="_blank"
-           class="bg-[#d4af37] text-[#070f1e] font-bold py-2 rounded-lg">قنوات – شهريًا</a>
-      </div>
-    </div>
+<!-- SMART PROMAX -->
+<div class="gold rounded-2xl p-5 md:p-7 text-center transition">
+<img src="./images/device.png" class="mx-auto h-28">
+<h3 class="mt-4 text-xl font-extrabold">SMART PROMAX</h3>
+<div class="mt-4 flex flex-col gap-3">
+<a href="https://www.mediafire.com/file/lsdgvxz188tgczs/SMARTSAT_999_PROMAX_GOLD_Black_2507L_1G_16M_SLC9_YL2410_Internal_62319_rls6_20251105_135750.bin/file" target="_blank" class="bg-white text-black py-2.5 rounded-lg font-bold">SOFTWARE</a>
+<a href="https://www.mediafire.com/file/tr86dmyy1d301zw/AR_ثابت.bin/file" target="_blank" class="bg-[#d4af37] text-black py-2.5 rounded-lg font-bold">قنوات – شهريًا</a>
+<a href="https://api.whatsapp.com/send/?phone=201098256570&text=SMART%20PROMAX" target="_blank" class="border border-white/30 py-2 rounded-lg">دعم فني</a>
+</div>
+</div>
 
-    <!-- CEMEX2020 -->
-    <div class="fade-up gold-border gold-glow rounded-2xl p-7 text-center">
-      <img src="/images/device.png" class="mx-auto h-32">
-      <h3 class="mt-5 text-xl font-extrabold">CEMEX2020</h3>
-      <div class="mt-5 flex flex-col gap-3">
-        <a href="https://www.mediafire.com/file/z8chc4f5qn0jt3k/CEMEX-2020-SAT2IP.bin/file" target="_blank"
-           class="bg-white text-[#070f1e] font-bold py-2 rounded-lg">SOFTWARE</a>
-        <a href="https://www.mediafire.com/file/7kw0njs1mzil4ul/AR_ثابت_Multstream1.bin/file" target="_blank"
-           class="bg-[#d4af37] text-[#070f1e] font-bold py-2 rounded-lg">قنوات – شهريًا</a>
-      </div>
-    </div>
+<!-- CEMEX2020 -->
+<div class="gold rounded-2xl p-5 md:p-7 text-center transition">
+<img src="./images/device.png" class="mx-auto h-28">
+<h3 class="mt-4 text-xl font-extrabold">CEMEX2020</h3>
+<div class="mt-4 flex flex-col gap-3">
+<a href="https://www.mediafire.com/file/z8chc4f5qn0jt3k/CEMEX-2020-SAT2IP.bin/file" target="_blank" class="bg-white text-black py-2.5 rounded-lg font-bold">SOFTWARE</a>
+<a href="https://www.mediafire.com/file/7kw0njs1mzil4ul/AR_ثابت_Multstream1.bin/file" target="_blank" class="bg-[#d4af37] text-black py-2.5 rounded-lg font-bold">قنوات – شهريًا</a>
+<a href="https://api.whatsapp.com/send/?phone=201098256570&text=CEMEX2020" target="_blank" class="border border-white/30 py-2 rounded-lg">دعم فني</a>
+</div>
+</div>
 
-    <!-- CEMEX2024 -->
-    <div class="fade-up gold-border gold-glow rounded-2xl p-7 text-center">
-      <img src="/images/device.png" class="mx-auto h-32">
-      <h3 class="mt-5 text-xl font-extrabold">CEMEX2024</h3>
-      <div class="mt-5 flex flex-col gap-3">
-        <a href="https://www.mediafire.com/file/h2ckt1tfxjuh2dp/CEMEX-2024-SAT2IP.bin/file" target="_blank"
-           class="bg-white text-[#070f1e] font-bold py-2 rounded-lg">SOFTWARE</a>
-        <a href="https://www.mediafire.com/file/tr86dmyy1d301zw/AR_ثابت.bin/file" target="_blank"
-           class="bg-[#d4af37] text-[#070f1e] font-bold py-2 rounded-lg">قنوات – شهريًا</a>
-      </div>
-    </div>
+<!-- CEMEX2024 -->
+<div class="gold rounded-2xl p-5 md:p-7 text-center transition">
+<img src="./images/device.png" class="mx-auto h-28">
+<h3 class="mt-4 text-xl font-extrabold">CEMEX2024</h3>
+<div class="mt-4 flex flex-col gap-3">
+<a href="https://www.mediafire.com/file/h2ckt1tfxjuh2dp/CEMEX-2024-SAT2IP.bin/file" target="_blank" class="bg-white text-black py-2.5 rounded-lg font-bold">SOFTWARE</a>
+<a href="https://www.mediafire.com/file/tr86dmyy1d301zw/AR_ثابت.bin/file" target="_blank" class="bg-[#d4af37] text-black py-2.5 rounded-lg font-bold">قنوات – شهريًا</a>
+<a href="https://api.whatsapp.com/send/?phone=201098256570&text=CEMEX2024" target="_blank" class="border border-white/30 py-2 rounded-lg">دعم فني</a>
+</div>
+</div>
 
-    <!-- CEMEX2025 / 2025-2 -->
-    <div class="fade-up gold-border gold-glow rounded-2xl p-7 text-center">
-      <img src="/images/device.png" class="mx-auto h-32">
-      <h3 class="mt-5 text-xl font-extrabold">CEMEX2025 / 2025-2</h3>
-      <div class="mt-5 flex flex-col gap-3">
-        <a href="https://www.mediafire.com/file/4cv7ry72zkuzbma/3-_ALL_1506TV_512_4M_WIFI_TOP10IPTV-VIP-27-12-2023-.bin/file" target="_blank"
-           class="bg-white text-[#070f1e] font-bold py-2 rounded-lg">SOFTWARE</a>
-        <a href="https://www.mediafire.com/file/tr86dmyy1d301zw/AR_ثابت.bin/file" target="_blank"
-           class="bg-[#d4af37] text-[#070f1e] font-bold py-2 rounded-lg">قنوات – شهريًا</a>
-      </div>
-    </div>
+<!-- CEMEX2025 -->
+<div class="gold rounded-2xl p-5 md:p-7 text-center transition">
+<img src="./images/device.png" class="mx-auto h-28">
+<h3 class="mt-4 text-xl font-extrabold">CEMEX2025</h3>
+<div class="mt-4 flex flex-col gap-3">
+<a href="https://www.mediafire.com/file/4cv7ry72zkuzbma/3-_ALL_1506TV_512_4M_WIFI_TOP10IPTV-VIP-27-12-2023-.bin/file" target="_blank" class="bg-white text-black py-2.5 rounded-lg font-bold">SOFTWARE</a>
+<a href="https://www.mediafire.com/file/tr86dmyy1d301zw/AR_ثابت.bin/file" target="_blank" class="bg-[#d4af37] text-black py-2.5 rounded-lg font-bold">قنوات – شهريًا</a>
+<a href="https://api.whatsapp.com/send/?phone=201098256570&text=CEMEX2025" target="_blank" class="border border-white/30 py-2 rounded-lg">دعم فني</a>
+</div>
+</div>
 
-    <!-- CEMEX888 -->
-    <div class="fade-up gold-border gold-glow rounded-2xl p-7 text-center">
-      <img src="/images/device.png" class="mx-auto h-32">
-      <h3 class="mt-5 text-xl font-extrabold">CEMEX888</h3>
-      <div class="mt-5 flex flex-col gap-3">
-        <a href="https://www.mediafire.com/file/jtdm4x0p5sovx1u/CEMEX_CAFE888_1506HV.bin/file" target="_blank"
-           class="bg-white text-[#070f1e] font-bold py-2 rounded-lg">SOFTWARE</a>
-        <a href="https://www.mediafire.com/file/tr86dmyy1d301zw/AR_ثابت.bin/file" target="_blank"
-           class="bg-[#d4af37] text-[#070f1e] font-bold py-2 rounded-lg">قنوات – شهريًا</a>
-      </div>
-    </div>
-
-    <!-- SMART PROMAX -->
-    <div class="fade-up gold-border gold-glow rounded-2xl p-7 text-center">
-      <img src="/images/device.png" class="mx-auto h-32">
-      <h3 class="mt-5 text-xl font-extrabold">SMART PROMAX</h3>
-      <div class="mt-5 flex flex-col gap-3">
-        <a href="https://www.mediafire.com/file/lsdgvxz188tgczs/SMARTSAT_999_PROMAX_GOLD_Black_2507L_1G_16M_SLC9_YL2410_Internal_62319_rls6_20251105_135750.bin/file" target="_blank"
-           class="bg-white text-[#070f1e] font-bold py-2 rounded-lg">SOFTWARE</a>
-        <a href="https://www.mediafire.com/file/tr86dmyy1d301zw/AR_ثابت.bin/file" target="_blank"
-           class="bg-[#d4af37] text-[#070f1e] font-bold py-2 rounded-lg">قنوات – شهريًا</a>
-      </div>
-    </div>
-
-  </div>
+</div>
 </main>
+
+<!-- FLOAT WHATSAPP -->
+<a href="https://api.whatsapp.com/send/?phone=201098256570"
+class="fixed bottom-6 left-6 z-50 bg-[#25D366] text-white px-5 py-3 rounded-full font-bold shadow-xl hover:scale-105 transition">
+دعم فني واتساب
+</a>
 
 <!-- FOOTER -->
 <footer class="border-t border-white/10 py-6 text-center text-sm text-white/50">
-  © 2026 CEMEX
+© 2026 CEMEX
 </footer>
 
 </body>
