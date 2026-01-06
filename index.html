@@ -5,14 +5,19 @@
   <title>CEMEX Downloads</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="CEMEX official firmware downloads">
   <meta property="og:title" content="CEMEX Downloads">
-  <meta property="og:image" content="https://f.top4top.io/p_3658suszw1.png">
+  <meta property="og:image" content="/images/logo.png">
 
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+
     @keyframes fadeUp {
-      from { opacity:0; transform:translateY(20px) }
+      from { opacity:0; transform:translateY(18px) }
       to { opacity:1; transform:translateY(0) }
     }
     .fade-up { animation: fadeUp .7s ease both }
@@ -20,12 +25,34 @@
     .gold-border {
       border: 1.5px solid transparent;
       background:
-        linear-gradient(#0b1a2e, #0b1a2e) padding-box,
+        linear-gradient(#07162b, #07162b) padding-box,
         linear-gradient(135deg, #d4af37, #fff1a8, #b8962e) border-box;
     }
-
     .gold-glow:hover {
-      box-shadow: 0 0 25px rgba(212,175,55,.55);
+      box-shadow: 0 0 26px rgba(212,175,55,.6);
+    }
+    .gold-shine {
+      position: relative;
+      overflow: hidden;
+    }
+    .gold-shine::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -80%;
+      width: 50%;
+      height: 200%;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,241,168,.45),
+        transparent
+      );
+      transform: rotate(25deg);
+      transition: .8s;
+    }
+    .gold-shine:hover::after {
+      left: 130%;
     }
   </style>
 </head>
@@ -33,55 +60,103 @@
 <body class="bg-[#070f1e] text-white min-h-screen antialiased">
 
 <!-- HEADER -->
-<header class="py-8 flex justify-center border-b border-white/10">
-  <img
-    src="https://f.top4top.io/p_3658suszw1.png"
-    alt="CEMEX Logo"
-    class="h-16 object-contain"
-  />
+<header class="py-10 flex justify-center border-b border-white/10">
+  <img src="/images/logo.png" alt="CEMEX Logo" class="h-16 object-contain">
 </header>
 
 <!-- HERO -->
-<section class="text-center py-14 px-4">
+<section class="text-center py-16 px-4">
   <h1 class="text-4xl font-extrabold tracking-wide">
     CEMEX Firmware Downloads
   </h1>
-  <p class="mt-3 text-white/65">
-    الصفحة الرسمية لتحميل السوفت وير والتحديثات
+  <p class="mt-4 text-white/65 max-w-xl mx-auto">
+    الصفحة الرسمية لتحميل السوفت وير والتحديثات الخاصة بأجهزة CEMEX
   </p>
 </section>
 
 <!-- MODELS -->
-<main class="max-w-6xl mx-auto px-4 pb-20">
+<main class="max-w-6xl mx-auto px-4 pb-24">
   <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
 
-    <!-- CARD -->
-    <a href="https://www.mediafire.com/file/XXXX/CEMEX2020.zip" target="_blank"
-       class="fade-up gold-border gold-glow rounded-2xl p-6 text-center transition hover:scale-105">
-
-      <img src="https://h.top4top.io/p_3658p8bys1.png"
-           alt="CEMEX2020"
-           class="mx-auto h-36 object-contain">
-
-      <h3 class="mt-5 text-xl font-bold tracking-wide">
-        CEMEX2020
-      </h3>
-
-      <span class="mt-4 inline-block px-6 py-2 rounded-full
-                   bg-gradient-to-r from-[#d4af37] via-[#fff1a8] to-[#b8962e]
-                   text-[#070f1e] font-extrabold text-sm">
+    <!-- CEMEX2020 -->
+    <a href="PUT_MEDIAFIRE_LINK_HERE"
+       target="_blank"
+       class="fade-up gold-border gold-glow gold-shine rounded-2xl p-7 text-center transition hover:scale-105">
+      <img src="/images/device.png" class="mx-auto h-36 object-contain">
+      <h3 class="mt-6 text-xl font-extrabold">CEMEX2020</h3>
+      <span class="mt-5 inline-block px-7 py-2 rounded-full bg-gradient-to-r from-[#d4af37] via-[#fff1a8] to-[#b8962e] text-[#070f1e] font-extrabold text-sm">
         تحميل
       </span>
     </a>
 
-    <!-- انسخ الكارت لباقي الموديلات -->
+    <!-- CEMEX2024 -->
+    <a href="PUT_MEDIAFIRE_LINK_HERE"
+       target="_blank"
+       class="fade-up gold-border gold-glow gold-shine rounded-2xl p-7 text-center transition hover:scale-105">
+      <img src="/images/device.png" class="mx-auto h-36 object-contain">
+      <h3 class="mt-6 text-xl font-extrabold">CEMEX2024</h3>
+      <span class="mt-5 inline-block px-7 py-2 rounded-full bg-gradient-to-r from-[#d4af37] via-[#fff1a8] to-[#b8962e] text-[#070f1e] font-extrabold text-sm">
+        تحميل
+      </span>
+    </a>
+
+    <!-- CEMEX2025 -->
+    <a href="PUT_MEDIAFIRE_LINK_HERE"
+       target="_blank"
+       class="fade-up gold-border gold-glow gold-shine rounded-2xl p-7 text-center transition hover:scale-105">
+      <img src="/images/device.png" class="mx-auto h-36 object-contain">
+      <h3 class="mt-6 text-xl font-extrabold">CEMEX2025</h3>
+      <span class="mt-5 inline-block px-7 py-2 rounded-full bg-gradient-to-r from-[#d4af37] via-[#fff1a8] to-[#b8962e] text-[#070f1e] font-extrabold text-sm">
+        تحميل
+      </span>
+    </a>
+
+    <!-- CEMEX2025 V2 -->
+    <a href="PUT_MEDIAFIRE_LINK_HERE"
+       target="_blank"
+       class="fade-up gold-border gold-glow gold-shine rounded-2xl p-7 text-center transition hover:scale-105">
+      <img src="/images/device.png" class="mx-auto h-36 object-contain">
+      <h3 class="mt-6 text-xl font-extrabold">CEMEX2025 V2</h3>
+      <span class="mt-5 inline-block px-7 py-2 rounded-full bg-gradient-to-r from-[#d4af37] via-[#fff1a8] to-[#b8962e] text-[#070f1e] font-extrabold text-sm">
+        تحميل
+      </span>
+    </a>
+
+    <!-- CEMEX3030 -->
+    <a href="PUT_MEDIAFIRE_LINK_HERE"
+       target="_blank"
+       class="fade-up gold-border gold-glow gold-shine rounded-2xl p-7 text-center transition hover:scale-105">
+      <img src="/images/device.png" class="mx-auto h-36 object-contain">
+      <h3 class="mt-6 text-xl font-extrabold">CEMEX3030</h3>
+      <span class="mt-5 inline-block px-7 py-2 rounded-full bg-gradient-to-r from-[#d4af37] via-[#fff1a8] to-[#b8962e] text-[#070f1e] font-extrabold text-sm">
+        تحميل
+      </span>
+    </a>
+
+    <!-- CEMEX500 -->
+    <a href="PUT_MEDIAFIRE_LINK_HERE"
+       target="_blank"
+       class="fade-up gold-border gold-glow gold-shine rounded-2xl p-7 text-center transition hover:scale-105">
+      <img src="/images/device.png" class="mx-auto h-36 object-contain">
+      <h3 class="mt-6 text-xl font-extrabold">CEMEX500</h3>
+      <span class="mt-5 inline-block px-7 py-2 rounded-full bg-gradient-to-r from-[#d4af37] via-[#fff1a8] to-[#b8962e] text-[#070f1e] font-extrabold text-sm">
+        تحميل
+      </span>
+    </a>
 
   </div>
 </main>
 
+<!-- WHATSAPP -->
+<a href="https://api.whatsapp.com/send/?phone=201098256570"
+   target="_blank"
+   class="fixed bottom-6 left-6 z-50 bg-[#25D366] text-white px-5 py-3 rounded-full font-bold shadow-xl hover:scale-105 transition">
+  الدعم الفني
+</a>
+
 <!-- FOOTER -->
 <footer class="border-t border-white/10 py-6 text-center text-sm text-white/50">
-  © 2026 CEMEX
+  © 2026 CEMEX. All rights reserved.
 </footer>
 
 </body>
